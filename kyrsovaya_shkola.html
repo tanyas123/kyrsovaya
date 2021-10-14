@@ -2,408 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bda932dcf2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Title</title>
-    <style>
-        .header{
-            display: flex;
-            flex-direction: row;
-            background: #e9e9e9;
-            background-image: url("back.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        @media screen and (max-width: 1000px){
-            .header{
-                background-image: url("why2.jpg");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-        }
-        @font-face {
-            font-family: lobster;
-            src: url("Lobster.ttf");
-        }
 
-        .menu{
-            background: #292929;
-            height: 740px;
-            width: 50px;
-        }
-        .menu p{
-            transform: rotate(-90deg);
-            color: #e1e2da;
-            display: flex;
-            flex-direction: row;
-            margin-top: 300px;
-        }
-        .menu img{
-            width: 47px;
-        }
-        .cont-head{
-            width: 300px;
-            margin: 160px 80px;
-
-        }
-        #zagolovok{
-            font-size: 30px;
-        }
-        .about{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .cont-about{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 1200px;
-        }
-        .zag-about{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            width: 350px;
-        }
-        .ourworks{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #e8e8e8;
-        }
-        .works-nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-        .works-nav a{
-            padding-right: 10px;
-        }
-        .works-pic-1{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 900px;
-        }
-        .works-pic-2{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 900px;
-        }
-        .pic{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-bottom: 1px solid grey;
-            margin-bottom: 20px;
-            padding: 20px 0;
-        }
-        .pic img{
-            width: 250px;
-            height: 250px;
-            padding-bottom: 20px;
-        }
-        .pic p{
-            margin: 0;
-        }
-        .more{
-            margin-bottom: 40px;
-        }
-        .whyus{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .why{
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 40px;
-        }
-        .why img{
-            width: 200px;
-            height: 200px;
-            margin-right: 20px;
-        }
-        .why-text{
-            display: flex;
-            flex-direction: column;
-
-        }
-        .why-text p{
-            margin: 0;
-        }
-        .voyageur{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            height: 600px;
-            background-image: url("voyag.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: #e1e2da;
-
-        }
-        .voyageur-text{
-            width: 400px;
-            margin-top: 200px;
-            margin-left: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-        .voyag-img img{
-            width: 800px;
-            margin-top: 5px;
-            margin-left: 20px;
-        }
-        .under-voyag{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 30px 50px;
-            background: #f9f9f9;
-        }
-        .undvoyagitem{
-            display: flex;
-            flex-direction: row;
-        }
-        .undvoyagitem img{
-            width: 100px;
-            height: 100px;
-            background: #9b999a;
-        }
-        .und-text{
-            display: flex;
-            flex-direction: column;
-        }
-        .und-text p{
-            margin: 0;
-            padding-top: 10px;
-        }
-        .ourteam{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 50px;
-        }
-        .team-pic{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .teampicture{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-bottom: 1px solid grey;
-            margin: 0 20px;
-            padding: 20px 0;
-        }
-        .teampicture img{
-            width: 200px;
-            height: 240px;
-            margin-bottom: 10px;
-        }
-        .teampicture p{
-            margin: 0;
-        }
-        .ourskills{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 50px 300px;
-        }
-        .skill-cont{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .skill-img img{
-            width: 500px;
-
-        }
-        .pre-boot{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            background: #9b999a;
-            height: 100px;
-        }
-        .pre{
-            border-top: 1px solid grey;
-            border-bottom: 1px solid grey;
-            border-right: 1px solid grey;
-            width: 253px;
-            background: #f9f9f9;
-            padding-top: 10px;
-        }
-        .video iframe{
-            margin-top: 50px;
-        }
-        #carou-img{
-            background: #272427;
-            display: flex;
-            flex-direction: row;
-        }
-        .carou-text{
-            display: flex;
-            flex-direction: column;
-            color: #e1e2da;
-            margin: 200px;
-
-        }
-        .car-img img{
-            width: 550px;
-        }
-        #carou li{
-            border-radius: 50%;
-            width: 5px;
-        }
-        .news{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .news-1{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 30px 300px;
-        }
-        .news-img img{
-            width: 300px;
-            padding-right: 30px;
-        }
-        .forma{
-            margin: 40px auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background: #f9f9f9;
-            padding: 50px 0;
-        }
-        .form input{
-            padding: 10px 0;
-            border: none;
-            background: #f9f9f9;
-            color: #bababa;
-            border-bottom: 1px solid #bababa;
-            width: 500px;
-        }
-        .contact{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .contact-cont{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .contact-pic{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 20px 90px;
-        }
-        .contact-pic img{
-            width: 40px;
-        }
-        .footer{
-            background: #292929;
-            color: #e1e2da;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px 0;
-        }
-        .labels{
-            display: flex;
-            flex-direction: row;
-        }
-        .head-cont{
-            font-size: 30px;
-            font-weight: bold;
-            font-family: Bahnschrift, sans-serif;
-            padding-top: 20px;
-        }
-        .more a{
-            text-decoration: none;
-            color: #1d2226;
-            border-bottom: 2px solid #1d2226;
-            font-weight: bold;
-            font-family: Bahnschrift, sans-serif;
-            padding-top: 10px;
-        }
-        .more a:hover{
-            text-decoration: none;
-            color: #1d2226;
-        }
-        .other {
-            text-decoration: none;
-            color: black;
-        }
-        .other:hover{
-            text-decoration: none;
-            color: grey;
-        }
-        .works-nav p{
-            color: grey;
-            padding-right: 5px;
-
-        }
-        .more-1 a{
-            text-decoration: none;
-            color: #e1e2da;
-            border-bottom: 2px solid #e1e2da;
-            font-weight: bold;
-            font-family: Bahnschrift, sans-serif;
-            padding-top: 10px;
-        }
-        .more-1 a:hover{
-            text-decoration: none;
-            color: #e1e2da;
-        }
-        #voy-head{
-            font-size: 43px;
-            font-weight: bold;
-            font-family: Bahnschrift, sans-serif;
-        }
-        .lobster{
-            font-family: lobster, sans-serif;
-            font-size: 20px;
-        }
-        .nolob{
-            color: grey;
-            font-size: 15px;
-            font-family: lobster, sans-serif;
-            padding-bottom: 10px;
-        }
-        .bold{
-            font-family: Bahnschrift,sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .wave{
-            width: 30px;
-            padding-bottom: 20px;
-        }
-
-
-
-    </style>
 </head>
 <body>
 <div class="header">
         <div class="menu">
-            <a href=""><img src="menu.jpg"></a>
+            <a href=""><img src="img/menu.jpg"></a>
             <p>SNDSGN</p>
         </div>
         <div class="cont-head">
@@ -418,7 +29,7 @@
     <div class="head-cont">
         <p>ABOUT US</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <div class="cont-about">
         <div class="zag-about">
             <p class="lobster">Website Design & Development -></p>
@@ -450,34 +61,34 @@
     <div class="works-pic">
         <div class="works-pic-1">
             <div class="pic">
-                <img src="gucci.jpg">
+                <img src="img/gucci.jpg">
                 <p class="lobster">Sample</p>
                 <p class="nolob">Design, Bottle</p>
             </div>
             <div class="pic">
-                <img src="prada.jpg">
+                <img src="img/prada.jpg">
                 <p class="lobster">On the road</p>
                 <p class="nolob">Branding, Design, Logotype</p>
             </div>
             <div class="pic">
-                <img src="valentino.jpg">
+                <img src="img/valentino.jpg">
                 <p class="lobster">Terminal</p>
                 <p class="nolob">Design, Logotype, Terminal</p>
             </div>
         </div>
         <div class="works-pic-2">
             <div class="pic">
-                <img src="balenciaga.jpg">
+                <img src="img/balenciaga.jpg">
                 <p class="lobster">Sample</p>
                 <p class="nolob">Design, Bottle</p>
             </div>
             <div class="pic">
-                <img src="versace.jpg">
+                <img src="img/versace.jpg">
                 <p class="lobster">Noteckie</p>
                 <p class="nolob">Branding, Design, Logotype</p>
             </div>
             <div class="pic">
-                <img src="givenchy.jpg">
+                <img src="img/givenchy.jpg">
                 <p class="lobster">Voyageur du temps</p>
                 <p class="nolob">Design, Logotype, Terminal</p>
             </div>
@@ -491,10 +102,10 @@
     <div class="head-cont">
         <p>WHY CHOOSE US</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <div class="why-cont">
         <div class="why">
-            <img src="why1.jpg">
+            <img src="img/why1.jpg">
             <div class="why-text">
                 <p class="bold">BEAUTIFUL & ENJOYABLE DESIGNS</p>
                 <p class="nolob">We define the trends. Enough Said!</p>
@@ -502,7 +113,7 @@
             </div>
         </div>
         <div class="why">
-            <img src="why2.jpg">
+            <img src="img/why2.jpg">
             <div class="why-text">
                 <p class="bold">PERFECT LAYOUT & EFFICIENT CODING</p>
                 <p class="nolob">We produce top class code</p>
@@ -510,7 +121,7 @@
             </div>
         </div>
         <div class="why">
-            <img src="why3.jpg">
+            <img src="img/why3.jpg">
             <div class="why-text">
                 <p class="bold">DEDICATED SUPPORT & UPDATES</p>
                 <p class="nolob">Team of experts to assist you</p>
@@ -518,7 +129,7 @@
             </div>
         </div>
         <div class="why">
-            <img src="why4.jpg">
+            <img id="spesial-pic" src="img/why4.jpg">
             <div class="why-text">
                 <p class="bold">DEDICATED SUPPORT & UPDATES</p>
                 <p class="nolob">Team of experts to assist you</p>
@@ -536,33 +147,33 @@
         </div>
     </div>
     <div class="voyag-img">
-        <img src="phone.png">
+        <img src="img/phone.png">
     </div>
 </div>
 <div class="under-voyag">
     <div class="undvoyagitem">
-        <img src="designer.png">
+        <img src="img/designer.png">
         <div class="und-text">
             <p class="bold">11</p>
             <p class="nolob">Designers</p>
         </div>
     </div>
     <div class="undvoyagitem">
-        <img src="hour.png">
+        <img src="img/hour.png">
         <div class="und-text">
             <p class="bold">6542</p>
             <p class="nolob">Hours worked</p>
         </div>
     </div>
     <div class="undvoyagitem">
-        <img src="pen.png">
+        <img src="img/pen.png">
         <div class="und-text">
             <p class="bold">254</p>
             <p class="nolob">Project finished</p>
         </div>
     </div>
     <div class="undvoyagitem">
-        <img src="coffee.png">
+        <img src="img/coffee.png">
         <div class="und-text">
             <p class="bold">435</p>
             <p class="nolob">Drunk Coffee</p>
@@ -573,39 +184,39 @@
     <div class="head-cont">
         <p>OUR TEAM</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <p class="nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, omnis.</p>
     <div class="team-pic">
         <div class="teampicture">
-            <img src="team2.jpg">
+            <img src="img/team2.jpg">
             <p class="bold">John Doe</p>
             <p class="nolob">Senior Designer</p>
         </div>
         <div class="teampicture">
-            <img src="team1.jpg">
+            <img src="img/team1.jpg">
             <p class="bold">Joanna Doe</p>
             <p class="nolob">Senior Designer</p>
         </div>
         <div class="teampicture">
-            <img src="team3.jpg">
+            <img src="img/team3.jpg">
             <p class="bold">John Doe</p>
             <p class="nolob">Senior Designer</p>
         </div>
         <div class="teampicture">
-            <img src="team4.jpg">
+            <img src="img/team4.jpg">
             <p class="bold">Joanna Doe</p>
             <p class="nolob">Senior Designer</p>
         </div>
     </div>
 </div>
 <div class="video">
-    <center><iframe width="90%" height="534" src="https://www.youtube.com/embed/yLQClxe_e9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <center><iframe src="https://www.youtube.com/embed/yLQClxe_e9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 </div>
 <div class="ourskills">
     <div class="head-cont">
-        <p>OUR SKILLS</p>
+        <p id="special-skill">OUR SKILLS</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <div class="skill-cont">
         <div class="skill-text">
             <p class="bold">PERFECT LAYOUT & EFFICIENT CODING</p>
@@ -613,28 +224,28 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur doloribus ea earum eum id ipsam iusto minus nisi odit, perferendis provident qui quidem quis repellat reprehenderit sed tempora vitae.</p>
         </div>
         <div class="skill-img">
-            <img src="skill.jpg">
+            <img src="img/skill.jpg">
         </div>
     </div>
 </div>
 <div class="pre-boot">
     <div class="pre">
-        <center><img src="accel.png"></center>
+        <center><img src="img/accel.png"></center>
     </div>
     <div class="pre">
-        <center><img src="appboy.png"></center>
+        <center><img src="img/appboy.png"></center>
     </div>
     <div class="pre">
-        <center><img src="hbo.png"></center>
+        <center><img src="img/hbo.png"></center>
     </div>
     <div class="pre">
-        <center><img src="hodinkee.png"></center>
+        <center><img src="img/hodinkee.png"></center>
     </div>
     <div class="pre">
-        <center><img src="mydamn.png"></center>
+        <center><img src="img/mydamn.png"></center>
     </div>
     <div class="pre">
-        <center><img src="champion.png"></center>
+        <center><img src="img/champion.png"></center>
     </div>
 </div>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -644,23 +255,41 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active" id="carou-img">
+        <div class="carousel-item active">
+            <div id="carou-img">
             <div class="car-img">
-                <img src="carou.jpg">
+                <img src="img/carou.jpg">
             </div>
             <div class="carou-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
                 <p class="lobster"> Joanna Doe</p>
                 <p class="nolob">Senior Designer</p>
             </div>
+            </div>
         </div>
         <div class="carousel-item">
-            <p>второй</p>
+            <div id="carou-img1">
+                <div class="car-img">
+                    <img src="img/carousel.jfif">
+                </div>
+                <div class="carou-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
+                    <p class="lobster"> Joanna Doe</p>
+                    <p class="nolob">Senior Designer</p>
+                </div>
+            </div>
         </div>
         <div class="carousel-item">
-            <p>второй</p>
-            <p>второй</p>
-<!--          <img class="d-block w-100" src="..." alt="Третий слайд">-->
+            <div id="carou-img2">
+                <div class="car-img">
+                    <img src="img/car1.jpg">
+                </div>
+                <div class="carou-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
+                    <p class="lobster"> Joanna Doe</p>
+                    <p class="nolob">Senior Designer</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -668,14 +297,14 @@
     <div class="head-cont">
         <p>OUR NEWS</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <div class="news-und">
-        <p class="nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet dolore dolorem facilis reprehenderit, sunt?</p>
+        <p class="nolob" id="special-nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet dolore dolorem facilis reprehenderit, sunt?</p>
     </div>
     <div class="news-cont">
         <div class="news-1">
             <div class="news-img">
-                <img src="news1.jpg">
+                <img src="img/news1.jpg">
             </div>
             <div class="news-text">
                 <p class="bold">PERFECT LAYOUT</p>
@@ -688,7 +317,7 @@
         </div>
         <div class="news-1">
             <div class="news-img">
-                <img src="news2.jfif">
+                <img src="img/news2.jfif">
             </div>
             <div class="news-text">
                 <p class="bold">BEAUTIFUL & ENJOYABLE DESIGNS</p>
@@ -712,10 +341,10 @@
             <input type="text" id="name" placeholder="name" name="user_name">
         </div>
         <div class="form">
-            <input type="text" id="name" name="user_name" placeholder="e-mail">
+            <input type="text" id="mail" name="user_name" placeholder="e-mail">
         </div>
         <div class="form">
-            <input type="text" id="name" name="user_name" placeholder="message">
+            <input type="text" id="text" name="user_name" placeholder="message">
         </div>
     </form>
     <div class="more">
@@ -727,21 +356,21 @@
     <div class="head-cont">
         <p>CONTACT US</p>
     </div>
-    <img class="wave" src="wavy-line.png">
+    <img class="wave" src="img/wavy-line.png">
     <div class="contact-und">
-        <p class="nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis illum inventore obcaecati odio voluptas.</p>
+        <p class="nolob" id="special-nolob1" ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem debitis illum inventore obcaecati odio voluptas.</p>
     </div>
     <div class="contact-cont">
         <div class="contact-pic">
-            <img src="telega.jpg">
+            <img src="img/telega.jpg">
             <p class="bold">HI@SNDSGN.CA</p>
         </div>
         <div class="contact-pic">
-            <img src="geo.jpg">
+            <img src="img/geo.jpg">
             <p class="bold">UKRAINE, KIEV, KHRESHATIK STR.</p>
         </div>
         <div class="contact-pic">
-            <img src="call.png">
+            <img src="img/call.png">
             <p class="bold">+38 066 475 30 22</p>
         </div>
     </div>
