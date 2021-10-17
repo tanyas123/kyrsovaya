@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="media.css" type="text/css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bda932dcf2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 
 </head>
@@ -17,11 +19,13 @@
             <a href=""><img src="img/menu.jpg"></a>
             <p>SNDSGN</p>
         </div>
-        <div class="cont-head">
-            <p id="zagolovok">TOMORROW IS A <strong>BRAND</strong> NEW DAY!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae commodi iure maiores optio quas reprehenderit sapiente sint vel! Eligendi?</p>
-            <div class="more">
-                <a href="">more</a>
+        <div class="wrapper">
+            <div class="cont-head">
+                <p id="zagolovok">TOMORROW IS A <strong>BRAND</strong> NEW DAY!</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae commodi iure maiores optio quas reprehenderit sapiente sint vel! Eligendi?</p>
+                <div class="more">
+                    <a href="">more</a>
+                </div>
             </div>
         </div>
 </div>
@@ -30,18 +34,20 @@
         <p>ABOUT US</p>
     </div>
     <img class="wave" src="img/wavy-line.png">
-    <div class="cont-about">
-        <div class="zag-about">
-            <p class="lobster">Website Design & Development -></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt dolor ipsum sapiente ullam voluptatum? Explicabo facilis harum numquam recusandae?</p>
-        </div>
-        <div class="zag-about">
-            <p class="lobster">Graphic Design & Advertising -></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam iste nihil non quas qui quibusdam, repudiandae sint tenetur vero?</p>
-        </div>
-        <div class="zag-about">
-            <p class="lobster">Advertising & Marketing Strategy -></p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae consequuntur dicta est expedita magni mollitia quaerat reiciendis totam ullam!</p>
+    <div class="wrapper">
+        <div class="cont-about">
+            <div class="zag-about">
+                <p class="lobster">Website Design & Development -></p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi deserunt dolor ipsum sapiente ullam voluptatum? Explicabo facilis harum numquam recusandae?</p>
+            </div>
+            <div class="zag-about">
+                <p class="lobster">Graphic Design & Advertising -></p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum ipsam iste nihil non quas qui quibusdam, repudiandae sint tenetur vero?</p>
+            </div>
+            <div class="zag-about">
+                <p class="lobster">Advertising & Marketing Strategy -></p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid beatae consequuntur dicta est expedita magni mollitia quaerat reiciendis totam ullam!</p>
+            </div>
         </div>
     </div>
 </div>
@@ -59,38 +65,42 @@
         <a href="" class="other">RESEARCH & GRAPHIC DESIGN</a>
     </div>
     <div class="works-pic">
-        <div class="works-pic-1">
-            <div class="pic">
-                <img src="img/gucci.jpg">
-                <p class="lobster">Sample</p>
-                <p class="nolob">Design, Bottle</p>
+        <div class="wrapper">
+            <div class="works-pic-1">
+                <div class="pic">
+                    <img src="img/gucci.jpg">
+                    <p class="lobster">Sample</p>
+                    <p class="nolob">Design, Bottle</p>
+                </div>
+                <div class="pic">
+                    <img src="img/prada.jpg">
+                    <p class="lobster">On the road</p>
+                    <p class="nolob">Branding, Design, Logotype</p>
+                </div>
+                <div class="pic">
+                    <img src="img/valentino.jpg">
+                    <p class="lobster">Terminal</p>
+                    <p class="nolob">Design, Logotype, Terminal</p>
+                </div>
             </div>
-            <div class="pic">
-                <img src="img/prada.jpg">
-                <p class="lobster">On the road</p>
-                <p class="nolob">Branding, Design, Logotype</p>
             </div>
-            <div class="pic">
-                <img src="img/valentino.jpg">
-                <p class="lobster">Terminal</p>
-                <p class="nolob">Design, Logotype, Terminal</p>
-            </div>
-        </div>
-        <div class="works-pic-2">
-            <div class="pic">
-                <img src="img/balenciaga.jpg">
-                <p class="lobster">Sample</p>
-                <p class="nolob">Design, Bottle</p>
-            </div>
-            <div class="pic">
-                <img src="img/versace.jpg">
-                <p class="lobster">Noteckie</p>
-                <p class="nolob">Branding, Design, Logotype</p>
-            </div>
-            <div class="pic">
-                <img src="img/givenchy.jpg">
-                <p class="lobster">Voyageur du temps</p>
-                <p class="nolob">Design, Logotype, Terminal</p>
+            <div class="wrapper">
+            <div class="works-pic-1">
+                <div class="pic">
+                    <img src="img/balenciaga.jpg">
+                    <p class="lobster">Sample</p>
+                    <p class="nolob">Design, Bottle</p>
+                </div>
+                <div class="pic">
+                    <img src="img/versace.jpg">
+                    <p class="lobster">Noteckie</p>
+                    <p class="nolob">Branding, Design, Logotype</p>
+                </div>
+                <div class="pic">
+                    <img src="img/givenchy.jpg">
+                    <p class="lobster">Voyageur du temps</p>
+                    <p class="nolob">Design, Logotype, Terminal</p>
+                </div>
             </div>
         </div>
     </div>
@@ -109,7 +119,7 @@
             <div class="why-text">
                 <p class="bold">BEAUTIFUL & ENJOYABLE DESIGNS</p>
                 <p class="nolob">We define the trends. Enough Said!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
             </div>
         </div>
         <div class="why">
@@ -117,7 +127,7 @@
             <div class="why-text">
                 <p class="bold">PERFECT LAYOUT & EFFICIENT CODING</p>
                 <p class="nolob">We produce top class code</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
             </div>
         </div>
         <div class="why">
@@ -125,7 +135,7 @@
             <div class="why-text">
                 <p class="bold">DEDICATED SUPPORT & UPDATES</p>
                 <p class="nolob">Team of experts to assist you</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
             </div>
         </div>
         <div class="why">
@@ -133,50 +143,53 @@
             <div class="why-text">
                 <p class="bold">DEDICATED SUPPORT & UPDATES</p>
                 <p class="nolob">Team of experts to assist you</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti natus placeat qui quibusdam recusandae suscipit!</p>
             </div>
         </div>
     </div>
 </div>
 <div class="voyageur">
-    <div class="voyageur-text">
-        <p id="voy-head">VOYAGER DU TEMPS</p>
-        <p> Our last responsive work in process. Just use the link below to watch what we are doing right now. Hope you like it!</p>
-        <div class="more-1">
-            <a href="">more</a>
+    <div class="wrapper">
+        <div class="voyageur-text">
+            <p id="voy-head">VOYAGER DU TEMPS</p>
+            <p class="PT"> Our last responsive work in process. Just use the link below to watch what we are doing right now. Hope you like it!</p>
+            <div class="more-1">
+                <a href="">more</a>
+            </div>
         </div>
-    </div>
-    <div class="voyag-img">
-        <img src="img/phone.png">
     </div>
 </div>
-<div class="under-voyag">
-    <div class="undvoyagitem">
-        <img src="img/designer.png">
-        <div class="und-text">
-            <p class="bold">11</p>
-            <p class="nolob">Designers</p>
-        </div>
-    </div>
-    <div class="undvoyagitem">
-        <img src="img/hour.png">
-        <div class="und-text">
-            <p class="bold">6542</p>
-            <p class="nolob">Hours worked</p>
-        </div>
-    </div>
-    <div class="undvoyagitem">
-        <img src="img/pen.png">
-        <div class="und-text">
-            <p class="bold">254</p>
-            <p class="nolob">Project finished</p>
-        </div>
-    </div>
-    <div class="undvoyagitem">
-        <img src="img/coffee.png">
-        <div class="und-text">
-            <p class="bold">435</p>
-            <p class="nolob">Drunk Coffee</p>
+<div class="back-voyag">
+    <div class="wrapper">
+        <div class="under-voyag">
+         <div class="undvoyagitem">
+                <img src="img/designer.png">
+                <div class="und-text">
+                    <p class="bold">11</p>
+                    <p class="nolob">Designers</p>
+                </div>
+            </div>
+            <div class="undvoyagitem">
+                <img src="img/hour.png">
+                <div class="und-text">
+                    <p class="bold">6542</p>
+                    <p class="nolob">Hours worked</p>
+                </div>
+            </div>
+            <div class="undvoyagitem">
+                <img src="img/pen.png">
+                <div class="und-text">
+                    <p class="bold">254</p>
+                    <p class="nolob">Project finished</p>
+                </div>
+            </div>
+            <div class="undvoyagitem">
+                <img src="img/coffee.png">
+                <div class="und-text">
+                    <p class="bold">435</p>
+                    <p class="nolob">Drunk Coffee</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -186,6 +199,7 @@
     </div>
     <img class="wave" src="img/wavy-line.png">
     <p class="nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, omnis.</p>
+    <div class="wrapper">
     <div class="team-pic">
         <div class="teampicture">
             <img src="img/team2.jpg">
@@ -208,6 +222,7 @@
             <p class="nolob">Senior Designer</p>
         </div>
     </div>
+    </div>
 </div>
 <div class="video">
     <center><iframe src="https://www.youtube.com/embed/yLQClxe_e9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
@@ -217,14 +232,16 @@
         <p id="special-skill">OUR SKILLS</p>
     </div>
     <img class="wave" src="img/wavy-line.png">
-    <div class="skill-cont">
-        <div class="skill-text">
-            <p class="bold">PERFECT LAYOUT & EFFICIENT CODING</p>
-            <p class="nolob">We produce top class code</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur doloribus ea earum eum id ipsam iusto minus nisi odit, perferendis provident qui quidem quis repellat reprehenderit sed tempora vitae.</p>
-        </div>
-        <div class="skill-img">
-            <img src="img/skill.jpg">
+    <div class="container">
+        <div class="skill-cont">
+            <div class="skill-text">
+                <p class="bold">PERFECT LAYOUT & EFFICIENT CODING</p>
+                <p class="nolob">We produce top class code</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur doloribus ea earum eum id ipsam iusto minus nisi odit, perferendis provident qui quidem quis repellat reprehenderit sed tempora vitae.</p>
+            </div>
+            <div class="skill-img">
+                <img src="img/skill.jpg">
+            </div>
         </div>
     </div>
 </div>
@@ -261,7 +278,7 @@
                 <img src="img/carou.jpg">
             </div>
             <div class="carou-text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
+                <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
                 <p class="lobster"> Joanna Doe</p>
                 <p class="nolob">Senior Designer</p>
             </div>
@@ -273,7 +290,7 @@
                     <img src="img/carousel.jfif">
                 </div>
                 <div class="carou-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
+                    <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
                     <p class="lobster"> Joanna Doe</p>
                     <p class="nolob">Senior Designer</p>
                 </div>
@@ -285,7 +302,7 @@
                     <img src="img/car1.jpg">
                 </div>
                 <div class="carou-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
+                    <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, nihil, vero! Eum facilis illum libero nulla perferendis quasi recusandae saepe.</p>
                     <p class="lobster"> Joanna Doe</p>
                     <p class="nolob">Senior Designer</p>
                 </div>
@@ -301,30 +318,32 @@
     <div class="news-und">
         <p class="nolob" id="special-nolob">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet dolore dolorem facilis reprehenderit, sunt?</p>
     </div>
-    <div class="news-cont">
-        <div class="news-1">
-            <div class="news-img">
-                <img src="img/news1.jpg">
-            </div>
-            <div class="news-text">
-                <p class="bold">PERFECT LAYOUT</p>
-                <P class="nolob">11 august 2014</P>
-                <div class="bord"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci amet at atque consequuntur cumque, et id in labore, modi nulla quia quo ratione recusandae rerum similique velit voluptates.</p>
-                <p class="nolob">#UX #UI #webdesign #website</p>
-            </div>
+    <div class="container">
+        <div class="news-cont">
+            <div class="news-1">
+                <div class="news-img">
+                    <img src="img/news1.jpg">
+                </div>
+                <div class="news-text">
+                    <p class="bold">PERFECT LAYOUT</p>
+                    <P class="nolob">11 august 2014</P>
+                    <div class="bord"></div>
+                    <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci amet at atque consequuntur cumque, et id in labore, modi nulla quia quo ratione recusandae rerum similique velit voluptates.</p>
+                    <p class="nolob">#UX #UI #webdesign #website</p>
+                </div>
 
-        </div>
-        <div class="news-1">
-            <div class="news-img">
-                <img src="img/news2.jfif">
             </div>
-            <div class="news-text">
-                <p class="bold">BEAUTIFUL & ENJOYABLE DESIGNS</p>
-                <P class="nolob">08 august 2014</P>
-                <div class="bord"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci amet at atque consequuntur cumque, et id in labore, modi nulla quia quo ratione recusandae rerum similique velit voluptates.</p>
-                <p class="nolob">#UX #UI #webdesign #website</p>
+            <div class="news-1">
+                <div class="news-img">
+                    <img src="img/news2.jfif">
+                </div>
+                <div class="news-text">
+                    <p class="bold">BEAUTIFUL & ENJOYABLE DESIGNS</p>
+                    <P class="nolob">08 august 2014</P>
+                    <div class="bord"></div>
+                    <p class="PT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium adipisci amet at atque consequuntur cumque, et id in labore, modi nulla quia quo ratione recusandae rerum similique velit voluptates.</p>
+                    <p class="nolob">#UX #UI #webdesign #website</p>
+                </div>
             </div>
         </div>
     </div>
@@ -376,17 +395,12 @@
     </div>
 </div>
 <div class="footer">
-    <img src="">
+    <img src="img/velo.jpg">
     <p>SNDSGN</p>
     <div class="labels">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
-        <img src="">
+        <img src="img/foot_lab.jpg">
     </div>
-    <div>SNDSGN Wordpress Theme</div>
+    <div>&#169 SNDSGN Wordpress Theme</div>
 </div>
 </body>
 </html>
